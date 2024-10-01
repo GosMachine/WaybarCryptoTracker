@@ -30,7 +30,6 @@ func Run() error {
 			symbols := strings.Split(symbolsStr, ",")
 			var output Output
 			for _, symbol := range symbols {
-				symbol = strings.TrimSpace(symbol)
 				symbolSplit := strings.Split(symbol, "/")
 				if len(symbolSplit) != 2 {
 					continue
